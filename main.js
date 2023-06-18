@@ -1,6 +1,6 @@
 console.log("Musify for the win!");
 let songIndex = 0;
-let audioElement = new Audio('./Songs/2.mp3');
+let audioElement = new Audio('./Songs/1.mp3');
     // audioElement.play();
 let masterPlay = document.getElementById('masterPlay');
 let gif  = document.getElementById('songBanner');
@@ -60,4 +60,32 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         gif.style.opacity = 1;
 
     })
+})
+document.getElementById('next').addEventListener('click', ()=>{
+    if(songIndex>=6){
+        songIndex = 0;
+    }
+    else{
+        songIndex += 1;
+    }
+    audioElement.src = Songs[songIndex].filePath;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    gif.style.opacity = 1;
+})
+
+document.getElementById('back').addEventListener('click', ()=>{
+    console.log("CHALRA");
+    if(songIndex<=0){
+        songIndex = 0
+    }
+    else{
+        songIndex -= 1;
+    }
+    audioElement.src = Songs[songIndex].filePath;
+    audioElement.currentTime = 0;
+    audioElement.play();
+    gif.style.opacity = 1;
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
 })
