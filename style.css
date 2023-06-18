@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&family=Poppins:wght@400;500&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(72, 0, 44);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav > ul {
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  align-items: center;
+  color: rgb(224, 14, 154);
+  list-style: none;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo {
+  font-family: "Gruppo", cursive;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 41px;
+  background-color: rgb(18, 0, 57);
+  font-family: "Poppins", sans-serif;
+  box-shadow: 3px 2px 500px 20px rgb(18, 0, 57);
+}
+nav > ul > li {
+  padding: 0 30px;
+}
+.home {
+  padding-top: 5px;
+}
+.contact {
+  padding-top: 5px;
+}
+.bottom {
+ /* position: sticky; */
+  position: fixed;
+  width: 100%;
+  height: 140px;
+  background-color: rgb(33, 2, 64);
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  flex-direction: column;
+  box-shadow: 3px 2px 500px 20px rgb(101, 7, 76);
+}
+.container {
+    background-image: url("https://images.unsplash.com/photo-1504704911898-68304a7d2807?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG11c2ljJTIwcGFydHl8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+  min-height: 70vh;
+  display: flex;
+  background-color: rgb(98, 0, 98);
+  width: 80%;
+  margin: 23px auto;
+  border-radius: 20px;
+  padding: 30px;
+  background-size: cover;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+#myProgressBar {
+  min-width: 800px;
+  align-items: center;
+}
+.play-button {
+  cursor: pointer;
+}
+.songItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:cursive;
+    color: rgb(215, 192, 211);
+    height: 60px;
+    width: 90%;
+    padding-right: 12px;
+    background-color: rgb(110, 110, 215);
+    border-radius: 5px;
+    margin: 12px;
+}
+.songItem img {
+    width: 60px;
+    margin: 0 5px;
+    margin-left: 0;
+    border-radius: 5px;
+}
+ .songlistPlay span {
+  display:flex;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+.songlistPlay span i{
+  margin-left: 12px;
+  cursor: pointer;
+}
+.songName{
+  padding-right: 0px;
+}
+#songBanner{
+  margin: 55px;
+  padding-left: 90px;
+  opacity: 0;
+  transition:ease-in;
+  transition-duration: 1s;
+}
