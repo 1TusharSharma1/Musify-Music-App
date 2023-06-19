@@ -75,7 +75,7 @@ document.getElementById('next').addEventListener('click', ()=>{
 })
 
 document.getElementById('back').addEventListener('click', ()=>{
-    console.log("CHALRA");
+
     if(songIndex<=0){
         songIndex = 0
     }
